@@ -1,0 +1,121 @@
+
+svg_map{
+    background: #eeeeee;
+  }
+
+text{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #000;
+    fill: #000;
+}
+
+table{
+    border:none;
+}
+
+ul.no_deco{
+  list-style-type: none;
+}
+
+.no_deco li{
+  padding-top: 0.1em;
+  padding-bottom: 0.8em;
+}
+
+li.arrow:before{
+  content: '\29D0';
+  margin: 0 0.5em 0 0.3em;
+}
+
+div.map_fixed .vid_fixed{
+  width: 900px;
+  margin: 0 auto;
+  padding-bottom: 12px;
+}
+
+/* chart axes */
+.chart_axis text {
+    font: 10px sans-serif;
+    fill: #fff;
+}
+
+.chart_title{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    fill: #fff;
+}
+
+.chart_axis line,
+.chart_axis path {
+    fill: none;
+    stroke: #fff;
+    shape-rendering: crispEdges;
+}
+
+/* slider */
+/* from http://bl.ocks.org/mbostock/6452972 */
+
+.axis {
+  font: 10px sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.axis .domain {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .3;
+  stroke-width: 10px;
+  stroke-linecap: round;
+}
+
+.axis .halo {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 8px;
+  stroke-linecap: round;
+}
+
+.slider .handle {
+  fill: #fff;
+  stroke: #000;
+  stroke-opacity: .5;
+  stroke-width: 1.25px;
+  pointer-events: none;
+}
+
+/* tool tips */
+.d3-tip {
+  line-height: 1.3;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: darkgrey;
+  border-radius: 2px;
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  font-size: 8pt;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+

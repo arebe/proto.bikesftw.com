@@ -1,0 +1,82 @@
+    <style>
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin: auto;
+        position: relative;
+        width: 960px;
+    }
+    form {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .node {
+        border: solid 1px white;
+        font: 0px sans-serif;
+        line-height: 12px;
+        overflow: hidden;
+        position: absolute;
+        text-indent: 2px;
+    }
+    .info_box {
+        position: absolute;
+        /* 	z-index: :-10; */
+        visibility: hidden;
+        background: rgba(0, 0, 0, .8);
+        border-radius: 5px;
+        padding: 5px;
+        color: white;
+    }
+    .line {
+        fill: none;
+        stroke: white;
+        stroke-width: 1.5px;
+    }
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: lightgrey;
+    }
+    /*
+path,
+    line,
+    text,
+    circle {
+        pointer-events: none;
+    }
+*/
+    
+   
+    #jmap {
+      background-color: #fff;
+      border: 1px solid #ccc;
+    }
+    .background {
+      fill: none;
+      pointer-events: all;
+    }
+    #countries, #states {
+      fill: #cde;
+      stroke: #fff;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
+    #countries .active, #states .active {
+      fill: #89a;
+    }
+    #cities {
+      stroke-width: 0;
+    }
+    .city {
+      fill: #345;
+      stroke: #fff;
+    }
+    pre.prettyprint {
+      border: 1px solid #ccc;
+      margin-bottom: 0;
+      padding: 9.5px;
+    }
+
+
+    
+   </style>
