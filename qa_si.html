@@ -11,7 +11,7 @@
     produced for CS34, Fall 2014
 
      -->
-    <title>Q & A</title>
+    <title>Repair Log</title>
     <link href="css/application.min.css" rel="stylesheet">
     <link href="css/bikesftw.css" rel="stylesheet">
 <!--     <link href="css/csMap.css" rel="stylesheet"> -->
@@ -20,10 +20,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta charset="utf-8">
-
-    <script type="text/javascript" src="js/colorbrewer.js"></script>
-    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" scr="js/bootstrap.min.js"></script>
 
 </head>
 <body class="background-dark landing">
@@ -84,56 +80,86 @@
     </div>  <!-- End col-md-12  -->
     </header>
     
-    <div class="content">
-    <div class="row">
-        <div class="col-md-12">
-            <section class="widget" >
-                    
-				
+    <div class="col-md-3">
+    <section class="widget" >
+     
+        <header>
+            <h1 class="page-title">Q & A</h1> 
+         </header>
 
-              
-              	
+                  
+        <form class="widget">
+            <label class="radio">
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Latest posts
+            </label>
+            <label class="radio">
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              Pinned posts
+            </label>
+        </form>
+
+        <form class="widget">
+              <button type="submit" class="btn">ASK A QUESTION</button>
+      </form>
+
+        <form class="form-search widget">
+          <input type="text" class="input-medium search-query">
+          <button type="submit" class="btn">Search</button>
+      </form>
 
 
-            </section>  <!-- End widget section  -->
-        </div> <!-- End col-md-2   -->
+     </section>  <!-- End widget section  -->
+                
+    </div> <!-- End col-md-3   -->
+
+    <div class="col-md-9">
+            
+          
+    </div> <!-- End col-md-9   -->
+
+    <div class="col-md-4">
+        <section class="widget">
+            <h4>Squeaky chain is driving me nuts</h4>
+            <img src="images/mybike.jpg" width="50"> 
+            <small>stuff and things and stuff and things and stuff and things and stuff and things and stuff and things and stuff and things and stuff and </small>
+        </section>
+
+        <section class="widget">
+            <h4>Which rack will fit?</h4>
+            <img src="images/antbike.jpg" width="50"> 
+            <small>stuff and things and stuff and things and stuff and things and stuff and things and stuff and things and stuff and things and stuff and </small>
+        </section>
+
+    </div> <!-- end col-md-4 -->
+    <div class="col-md-4">
+        <section class="widget">
+            <h4>Gravel sound in my rear hub</h4>
+            <img src="images/honkbike.jpg" width="50"> 
+            <small>stuff and things and stuff and things and stuff and things and stuff and things and stuff and things and stuff and things and stuff and </small>
+        </section>
+
+        <section class="widget">
+            <h4>I'm afraid of ice...</h4>
+            <img src="images/jpbike.jpg" width="50"> 
+            <small>stuff and things and stuff and things and stuff and things and stuff and things and stuff and things and stuff and things and stuff and </small>
+        </section>
+
+    </div> <!-- end col-md-4 -->
+
+
+
+
     </div>
           
-            
-    
-    <div class="row">
-    
-
-</div>
-          
-        </div>  <!-- End row  -->
-</div> <!-- End content -->
         
        
 
     </div> <!-- End container -->
-    
-    
 
-    <!--
-Tooltip
--->
-	<div class="info_box" id="info_box1">
-	    <p><strong>Species: </strong><span id="species"></span></p>
-	    <p><strong>Type: </strong><span id="type"></span></p>
-	    <p><strong>Average Cesium: </strong><span id="consensus"></span> Bq/kg</p>
-	</div>
-
-    <!-- jquery and friends 
-    <script src="lib/jquery/jquery-2.0.3.min.js"></script>
-    <script src="lib/jquery-pjax/jquery.pjax.js"></script>
--->
-
-        <!--backbone and friends 
-    <script src="lib/backbone/underscore-min.js"></script>
-    <script src="lib/backbone/backbone-min.js"></script>
-    <script src="lib/backbone/backbone.localStorage-min.js"></script>
--->
+    <script type="text/javascript" src="js/colorbrewer.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" scr="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/underscore.string.min.js"></script>
     
     <!-- page specific -->
