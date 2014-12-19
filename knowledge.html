@@ -21,9 +21,8 @@
     <meta name="author" content="">
     <meta charset="utf-8">
 
-    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/colorbrewer.js"></script>
-    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+
+
 
 </head>
 <body class="background-dark landing">
@@ -84,45 +83,132 @@
     </div>  <!-- End col-md-12  -->
     </header>
     
-    <div class="content">
-    <div class="row">
-        <div class="col-md-12">
+    <div class="col-md-4">
+    <section class="widget" >
+     
+        <header>
+            <h1 class="page-title">Knowledge Base</h1> 
+         </header>
+
+                   
+    <div class="nav-sidebar">
+
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Common repairs
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            <ul>
+                <li><a href="#">Drivetrain</a></li>
+                <li><a href="#">Brakes</a></li>
+                <li><a href="#">Wheels</a></li>
+                <li><a href="#">Fit adjustment</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Components
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            <ul>
+                <li><a href="#">Stem & handbars</a></li>
+                <li><a href="#">Brakes</a></li>
+                <li><a href="#">Shifters</a></li>
+                <li><a href="#">Cranks</a></li>
+                <li><a href="#">Wheels, spokes, hubs</a></li>
+                <li><a href="#">Bottom bracket</a></li>
+                <li><a href="#">Chain</a></li>
+                <li><a href="#">Pedals</a></li>        
+                <li><a href="#">Cables</a></li>
+                <li><a href="#">Saddle</a></li>        
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <h4 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Tools
+            </a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            <ul>
+                <li><a href="#">Wrenches</a></li>
+                <li><a href="#">Truing stand</a></li>
+                <li><a href="#">Chain breaker</a></li>
+                <li><a href="#">Misc</a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+
+     <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingFour">
+          <h4 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Accessories
+            </a>
+          </h4>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+          <div class="panel-body">
+            <ul>
+                <li><a href="#">Lights</a></li>
+                <li><a href="#">Racks</a></li>
+                <li><a href="#">Bells</a></li>
+                <li><a href="#">Clips & clipless pedals</a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- End accordion -->
+
+
+    </section>  <!-- End widget section  -->
+                
+    </div> <!-- End col-md-4   -->
+
+    <div class="col-md-8">
             <section class="widget" >
                     
-				
-
+                
+                <img src="images/AaronKuehn-TypographicBicycle-2010.png" alt="typographic bicycle" width="500" class="responsive">
               
-              	
-
-
+              
             </section>  <!-- End widget section  -->
-        </div> <!-- End col-md-2   -->
+    </div> <!-- End col-md-8   -->
     </div>
           
-            
-    
-    <div class="row">
-    
-
-</div>
-          
-        </div>  <!-- End row  -->
-</div> <!-- End content -->
-        
-       
-
-    </div> <!-- End container -->
+</div> <!-- End container -->
     
     
 
     <!--
 Tooltip
 -->
-	<div class="info_box" id="info_box1">
-	    <p><strong>Species: </strong><span id="species"></span></p>
-	    <p><strong>Type: </strong><span id="type"></span></p>
-	    <p><strong>Average Cesium: </strong><span id="consensus"></span> Bq/kg</p>
-	</div>
+    <div class="info_box" id="info_box1">
+        <p><strong>Species: </strong><span id="species"></span></p>
+        <p><strong>Type: </strong><span id="type"></span></p>
+        <p><strong>Average Cesium: </strong><span id="consensus"></span> Bq/kg</p>
+    </div>
 
     <!-- jquery and friends 
     <script src="lib/jquery/jquery-2.0.3.min.js"></script>
@@ -134,9 +220,16 @@ Tooltip
     <script src="lib/backbone/backbone-min.js"></script>
     <script src="lib/backbone/backbone.localStorage-min.js"></script>
 -->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/underscore.string.min.js"></script>
-    
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>      
+    <script type="text/javascript" src="js/colorbrewer.js"></script>
+
     <!-- page specific -->
+
+
+
+
 <!-- <script src="js/landing.js"></script> -->
 
 
