@@ -113,5 +113,9 @@
     -moz-border-radius: 0 4px 4px 0; 
     border-radius: 0 4px 4px 0; 
 }
+
+.panel-title{
+    background: rgba(0, 0, 0, .8);
+}
     
    </style>
